@@ -19,8 +19,8 @@
     var locations = @Html.Raw(Json.Serialize(Model.Objects));
     // Starting location
     const center = {
-        lat: 49.695008,
-        lng: 22.019219
+            lat: 52.17872797961584,
+            lng: 21.047392114670167
     };
 
     // Removing POI
@@ -34,7 +34,7 @@
 
     // Generating map
     const map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 14,
+        zoom: 8,
         center: center,
         styles: myStyles
     });
